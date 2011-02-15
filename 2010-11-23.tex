@@ -4,11 +4,12 @@
 
 \begin{itemize}
   \item Beispiel 1:\par
-  $\Afrak$ (Blocksworld-Graph hier einfügen)
+  $\Afrak$ \includegraphics[width=6cm]{23_11_10_1.png}
   
   Zuweisung $\beta$: $\beta(x) = bb \qquad \beta(y) = gb \qquad \beta(z) = gb$
   % Absicht, da Beispielbelegung: \beta(y) = \beta(z)
-  
+  rb, gb, bb können nie in Formel auftauchen. Sind nur Semantik. Brauchen immer Konstantensymbol.
+
   \begin{align}
     \Afrak, \beta &\models \exists x.(R(x) \AND \forall y.(\text{auf}(y,x) \IMPL G(y))) && \text{Satz} \\
     \Afrak, \beta &\models \exists z.(\text{neben}(b_1,z) \AND \text{unter}(z,b_2))     && \text{Satz} \\
@@ -17,6 +18,8 @@
     \Afrak, \beta &\models \forall x.(G(x) \OR B(x) \OR x = \text{lieblingsblock})      && \text{Satz}
   \end{align}
   
+(24) - freie Variable x. Jetzt ist Zuweisung auch anzugucken. Vorher hat Blick auf die Struktur gereicht.
+
   \item Beispiel 2:\par
   $\mathfrak{N} = (\mathbb{N}, +, \cdot, 0, 1)$
   
@@ -33,6 +36,11 @@
                         & \qquad\text{(offenes Problem der Zahlentheorie)}\notag
   \end{align}
 \end{itemize}
+
+Satz: Formel ohne freie Variablen.\\
+FO-Formel ist Eigenschaft von Struktur.\\
+Koinzidenzlemma\\
+\seeslide{32}
 
 \subsection{Isomorphielemma}
 

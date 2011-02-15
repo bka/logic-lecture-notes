@@ -1,6 +1,8 @@
 \section{VL vom 16. November 2010}
 
 \subsection{Strukturen}
+Graphen sind eingeschränkte art von Struktur.
+Idee der Temporallogik zeitliche Eigenschaften mit Struktur modellieren.
 \subsubsection{Block world}
 
 \begin{center}
@@ -72,6 +74,8 @@ Film^{\Afrak} &=& \{ (Die V"ogel, 1963, Hitchcock),
 Schauspieler^{\Afrak} &=& \{ (Conney, Foosel), (Conney,Goldfinger), (Hedren,Foosel)\}
 \end{eqnarray*}
 
+\textbf{Endliche} Strukturen lassen sich nach relationale DB hin und zurück übersetzen.
+
 \subsubsection{Beispiel XML}
 Als Baum/bin"are Relation:
 \begin{eqnarray*}
@@ -81,6 +85,9 @@ succ^{\Afrak} &=& \{(w, w_i) | w \in A^{*}, i \in \{0,1\}, w_i \in A \} \\
 Inventory^{\Afrak} &=& \{ \epsilon \} \\
 Price^{\Afrak} &=& \{ 000, 01,0, 110 \}
 \end{eqnarray*}
+
+Term bezeichnet eindeutiges Element des Universums.
+\seeslide{16-19}
 
 \subsection{Pr"adikatenlogik Semantik - Therme}
 Betrachte folgende Struktur $\Afrak$ mit un"aren Funktionssymbolen f,g und Konstante c:
@@ -102,6 +109,10 @@ Betrachte folgende Struktur $\Afrak$ mit un"aren Funktionssymbolen f,g und Konst
     \draw [->] (b) -- (c) node[below,pos=0.5] {g};
   \end{tikzpicture}
 \end{center}
+
+$\beta(c) = a_2$\\
+$\beta(g(f(c))) = a_4$
+
 
 Betrachte:
 \begin{itemize}

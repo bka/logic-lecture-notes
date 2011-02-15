@@ -78,3 +78,33 @@ Aus der effektiven Konstruierbarkeit der DNF folgt auch die der KNF ($\AND\OR$).
           &\EQUIV \ANDop_{i=1}^n \ORop_{j=1}^{m_1} \NOT\ell_{i,j}  &&\text{KNF}
 \end{align}
 \qed
+
+
+Paritätsfunktion Divide\&Conquer\\
+Boolsche Funktionen bilden Wahrheitswerte auf Warheitswerte ab.\\
+Zu jeder log. Funktion ich boolsche Funktion finden, die sie repräsentiert.\\
+
+\seeslide{30}
+
+Geringste Junktormenge: $\NOT, \AND$ oder $\NOT, \OR$ sind ausreichend\\
+
+0,1 aus $B^0$\\
+$\NOT$ aus $B^1$\\
+$\OR,\AND$ aus $B^2$\\
+Umgekehrt: jede boolsche Funktion liefert n-ären Junktor.
+
+Gültigkeit: Reduktion auf Unerfüllbarkeit u.U.
+
+Folgerbarkeit
+
+Die Belegung v erfüllt $\varphi$ :\\
+$v \models \varphi$ \\
+Jede Belegung die x und y wahr macht macht auch x wahr:\\
+$x \AND y \models y$\\
+
+Jede Belegung, die $\varphi$ erfüllt, erfüllt auch $\vartheta$.\\
+$\varphi \models \vartheta$.
+
+Horn Formel KNF mit höchstens einem positiven Literal.\\
+\seeslide{42}
+Äquivalenzen prüfen.\\

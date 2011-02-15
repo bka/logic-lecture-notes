@@ -5,12 +5,14 @@
 Sei $\tau = \set{c, f_1, f_2, P}$, wobei $c\in F^0(\tau)$ (Konstantensymbol)
 $f_1,f_2 \in F^1(\tau)$ und $P \in R^2(\tau)$.
 
-Für alle Herbrand-Strukturen für $\tau$ gilt:
+Für alle Herbrand-Strukturen für $\tau$ gilt(Es gibt mehrere):
 
 \begin{align*}
   H &= \set{c, f_1(c), f_2(c), f_1(f_1(c)), f_1(f_2(c)), \dots} \\
   c^\Hfrak &= c \qquad f_1^\Hfrak(c) = f_1(c) \qquad f_2^\Hfrak(c) = f_2(c) \qquad \dots
 \end{align*}
+
+$c^\Hfrak$ : Alle Terme werden als sie selbst interpretiert.\\
 
 Die Interpretation von $P$ ist frei, z.B.
 
@@ -18,8 +20,8 @@ Die Interpretation von $P$ ist frei, z.B.
   Baum-/Graph-Struktur von Bernd/Carsten tikzen
 \end{verbatim}
 
-Es genügt, zu zeigen
-
+Es genügt, zu zeigen\\
+\seeslide{16}
 \begin{itemize}
   \item[$(*)$] Für alle Sequenzen $\Gamma\IMPL\Delta$ und deren reduzierte Varianten
   $\Gamma'\IMPL\Delta'$ gilt: Jeder SK-Beweis für $\Gamma'\IMPL\Delta'$ kann in SK-Beweis
@@ -46,8 +48,8 @@ ist, wird mittels SK-Beweisen für
   \forall x.\varphi(x) &\EQUIV \NOT\exists x.\NOT\varphi(x)
 \end{align*}
 
-\enquote{on the fly} in reduzierte Form gewandelt.
-
+\enquote{on the fly} in reduzierte Form gewandelt.\\
+Wir können uns immer auf $(\NOT,\AND,\exists)$ beschränken. Umwandeln kann innerhalb des Kalküls stattfinden.
 \subsection{??}
 
 Wir konstruieren zwei Folgen:
@@ -98,7 +100,7 @@ Für $n\geq 0$ konstruieren wir $\Gamma_{n+1}, \Delta_{n+1}$ wie folgt:
   Exemplarisch erster Fall:
   
   Angenommen, $\Gamma_n\IMPL\Delta_n\cup\set{\psi}$ ist ableitbar. Dann mit ($\NOT\IMPL$)
-  auch $\Gamma_n\cup\set{\NOT\psi}\IMPL\Delta_n=\Gamma_n\IMPL\Delta_n$. $\lightning$
+  auch $\Gamma_n\cup\set{\NOT\psi}\IMPL\Delta_n=\Gamma_n\IMPL\Delta_n$. $\lightning$(vorher war es ableitbar)
   
   \item $\varphi_n = \psi_1 \AND \psi_2$
   

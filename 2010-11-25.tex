@@ -1,10 +1,10 @@
 \section{VL vom 25.~November 2010}
+$\beta[x/a]$ (ersetze das x durch a.
+\seeslide{37}
 
 \subsection{Beispiel FO-Auswertung}
 
-\begin{verbatim}
-  Graph von Bernd tikzen
-\end{verbatim}
+\includegraphics[width=4cm]{25_11_10_1.png}
 
 \begin{itemize}
   \item $\varphi = \forall x.(x=z \OR \forall y.E(x,y))$
@@ -41,7 +41,7 @@
 \end{align*}
 
 \subsection{Beispiel Domänenunabhängigkeit}
-
+\seeslide{41}
 Beispiele für domänenabhängige FO-Formeln
 
 \begin{tabular}{@{}*{2}{>{$}l<{\quad$}@{}}}
@@ -56,6 +56,9 @@ Alle Übersetzungen von Kern-SQL-Anfragen in FO sind domänenunabhängig, z.B.
 \[
   \exists y. \text{Film}(\underline{x}, y, \text{Hitchcock})
 \]
+
+Funktionale Vollständigkeit. Es reichen $\NOT,\AND$ und $\exists$\\
+\seeslide{46,47}
 
 \subsection{Erfüllbarkeit, Gültigkeit, Kosequenz}
 
@@ -72,6 +75,7 @@ Die folgende Formeln ist erfüllbar, aber nur in unendlich großen Modellen:
   \item $\forall x.\exists y. P(x,y)
   \AND \forall x,yz. P(x,y) \AND P(y,z) \IMPL P(x,z)
   \AND \NOT\exists x. P(x,x)$
+  \item transitiv, keine reflexive P-Schleife
 \end{itemize}
 
 Konsequenz:
@@ -81,6 +85,7 @@ Konsequenz:
 
 
 \subsection{Pränex-Normalform (PNN)}
+\seeslide{52}
 
 PNF, exemplarisch die erste Äquivalenz:
 

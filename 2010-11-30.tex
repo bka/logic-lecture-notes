@@ -1,5 +1,5 @@
 \section{VL vom 30.~November 2010}
-
+Bereinigt sein: Jede Variable darf nur 1 mal auftauchen. (Umbenennen)
 \subsection{Beispiel PNF}
 
 \begin{align}
@@ -10,6 +10,8 @@
 \end{align}
 
 \subsection{Postsches Korrespondenzproblem (PCP)}
+Unentscheidbarkeit\\
+\seeslide{57}
 
 \[
   F = \set{(0,1)_1, (1,10)_2, (01,1)_3}
@@ -21,6 +23,8 @@ Indexfolge 2,3 ist Lösung:
   \item linke Konkatenation:  $1|0 1$
   \item rechte Konkatenation: $1 0|1$
 \end{itemize}
+
+\includegraphics[width=3cm]{30_11_10_1.png}
 
 \subsubsection{Unentscheidbarkeit}
 
@@ -83,6 +87,9 @@ Indexfolge 2,3 ist Lösung:
   also $\Afrak\models\varphi_F$.
 \end{description}
 
+Gleichheit nicht wichtig für Entscheidbarkeit.\\
+\seeslide{60}
+
 \subsection{Beweis Theorem}
 
 Wir nehmen o.B.d.A. an, dass $\varphi$ ein Satz ist (universeller Abschluss).
@@ -113,7 +120,7 @@ Wir nehmen o.B.d.A. an, dass $\varphi$ ein Satz ist (universeller Abschluss).
     \hat{A} &= \set{[a] \mid a\in A}\\
     R^{\hat{\Afrak}} &= \set{([a_1],\dots,[a_n]) \mid (a_1,\dots,a_n) \in R^\Afrak }\\
   \end{align*}
-  
+  \seeslide{63}
   Für jede Zuweisung $\beta$ in $\Afrak$ sei $\hat{\beta}$ die
   Zuweisungen in $\hat{\Afrak}$ mit $\hat{\beta}(x)=[\beta(x)]$. Man
   zeigt per Induktion über die Struktur von $\psi$
@@ -126,3 +133,12 @@ Wir nehmen o.B.d.A. an, dass $\varphi$ ein Satz ist (universeller Abschluss).
   Wegen $\Afrak\not\models\varphi[P_=/=]$ folgt $\hat{\Afrak}\not\models\varphi$, also ist $\varphi$ nicht gültig.
 \end{description}
 \qed
+
+Es gibt unendl. Modell erfüllbar, dass bei endl. Modell nicht erfüllbar ist.\\
+Domänenabhängigkeit wichtig.\\
+\seeslide{62}
+Zu welchem Problem in der Logik erster Stufe korrespondieren?\\
+- Erfüllbarkeit
+
+Unendliche Menge von Formeln gesehen bei Kompaktheitstheorem. Unter Konsequenz abgeschlossen,
+wenn $\varphi$ aus T folgt, muss $\varphi$ bereits in T drin sein.
